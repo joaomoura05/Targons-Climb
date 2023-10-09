@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2oox46yl5i32"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dgop"]
+size = Vector2(121, 121)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3roeb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(188, -129)
+shape = SubResource("RectangleShape2D_2dgop")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_3roeb")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
