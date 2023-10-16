@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://yyyxsutm2u2x"]
+
+[ext_resource type="AudioStream" uid="uid://cywclhvuipvak" path="res://SFX/SFX/Chiptune_Adventures_1.ogg" id="1_rx5a7"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_rx5a7")
+volume_db = -1.125
+autoplay = true
