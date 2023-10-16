@@ -1,2 +1,2 @@
 # Targon´s Climb
-Desenvolvimento de jogo Targon´s Climb
+Desenvolvimento do jogo 2D Targon´s Climb
