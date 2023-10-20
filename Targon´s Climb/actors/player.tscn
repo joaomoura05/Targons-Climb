@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cufe88o7n4tno" path="res://assets/Puny-Characters/Character-Base.png" id="2_f4tk6"]
 [ext_resource type="Texture2D" uid="uid://bbj2ob5jm4oy" path="res://assets/char/Raver_P0.png" id="2_q6u4o"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i818h"]
-size = Vector2(27.5, 27)
+[sub_resource type="CircleShape2D" id="CircleShape2D_vhx5i"]
+radius = 15.3236
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q56kr"]
 atlas = ExtResource("2_q6u4o")
@@ -819,13 +819,14 @@ script = ExtResource("1_bpxrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.75, -1.5)
-shape = SubResource("RectangleShape2D_i818h")
+shape = SubResource("CircleShape2D_vhx5i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -3)
-scale = Vector2(1.78125, 1.71875)
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_ekt8t")
-animation = &"stop_down"
+animation = &"stop_up"
+frame = 1
+speed_scale = 4.0
 
 [node name="attack" type="Area2D" parent="."]
 position = Vector2(47, 41)
@@ -836,11 +837,8 @@ shape = SubResource("RectangleShape2D_adfbr")
 disabled = true
 
 [node name="camera" type="Camera2D" parent="."]
-position = Vector2(0, 2)
-offset = Vector2(30, -30)
-zoom = Vector2(1.75, 1.75)
-limit_left = -300
-limit_top = -825
-limit_right = 300
+limit_left = -735
+limit_top = -800
+limit_right = 750
 limit_bottom = 300
 editor_draw_limits = true

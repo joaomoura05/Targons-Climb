@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var anim = $AnimatedSprite2D
 @onready var anim_attack = $attack/CollisionShape2D
 
-const max_speed = 200
+const max_speed = 150
 const accel = 750
 const friction = 300
 
