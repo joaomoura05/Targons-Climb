@@ -27,8 +27,7 @@ func get_input():
 	elif input.x < 0:
 		anim.play("walk_left")	
 	else:
-		anim.stop()
-		anim.frame = 0
+		anim.play(anim.animation.replace("walk","stop"))
 	
 	return input.normalized()
 
