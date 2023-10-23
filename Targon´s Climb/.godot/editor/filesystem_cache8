@@ -1,17 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697827109
+::res://::1698102216
 AnimatedSprite2D.gd::GDScript::-1::1697812009::0::1::::<>AnimatedSprite2D<>::
 bg_music.tscn::PackedScene::1735576571693204853::1697812009::0::1::::<><>::uid://cywclhvuipvak
 enemy.gd::GDScript::-1::1697812009::0::1::::<>CharacterBody2D<>::
-icon.svg::CompressedTexture2D::3176555927157269115::1697812010::1697812010::1::::<><>::
-Level_I.tscn::PackedScene::7212178485207072273::1697491621::0::1::::<><>::uid://l085v72b51i
-node_2d.tscn::PackedScene::4311313433807785683::1697811979::0::1::::<><>::uid://bhbmtmp53lkda
-player.gd::GDScript::-1::1697821970::0::1::::<>CharacterBody2D<>::
+Level_I.tscn::PackedScene::5648754460812531199::1698099035::0::1::::<><>::uid://l085v72b51i
+Player.gd::GDScript::-1::1698097655::0::1::::<>CharacterBody2D<>::
 Targon.gd::GDScript::-1::1697812009::0::1::::<>Node2D<>::
-Targon.tscn::PackedScene::7898288143768408782::1697826187::0::1::::<><>::uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>res://enemy.gd<>uid://dgx7v4g32u2rp::::res://assets/Puny-Characters/Orc-Peon-Cyan.png
-::res://actors/::1697826187
-player.tscn::PackedScene::512973044041745509::1697826187::0::1::::<><>::res://player.gd<>uid://cufe88o7n4tno::::res://assets/Puny-Characters/Character-Base.png<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
-::res://assets/::1697816335
+Targon.tscn::PackedScene::5111009000310192089::1698102036::0::1::::<><>::uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>res://enemy.gd<>uid://dgx7v4g32u2rp::::res://assets/Puny-Characters/Orc-Peon-Cyan.png
+::res://actors/::1698099167
+player.tscn::PackedScene::512973044041745509::1698099167::0::1::::<><>::res://player.gd<>uid://cufe88o7n4tno
+::res://assets/::1698101530
 ::res://assets/char/::1697811998
 Raver_P0.png::CompressedTexture2D::72848629009724376::1697811998::1697811999::1::::<><>::
 ::res://assets/Puny-Characters/::1697812022
@@ -59,6 +57,10 @@ Bow.png::CompressedTexture2D::6727699173855616713::1697812023::1697812023::1::::
 Crossbow.png::CompressedTexture2D::7556262092844796488::1697812024::1697812024::1::::<><>::
 Knife.png::CompressedTexture2D::3841651287403505613::1697811999::1697811999::1::::<><>::
 spear.png::CompressedTexture2D::9014836579340543265::1697811999::1697812000::1::::<><>::
+::res://Menus/::1698102216
+Imagem_Menu.jpg::CompressedTexture2D::6113379392200700666::1698101954::1698102216::1::::<><>::
+Menu.gd::GDScript::-1::1698100162::0::1::::<>Control<>::
+menu.tscn::PackedScene::4226171455813817331::1698102216::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
 ::res://SFX/::1697737282
 ::res://SFX/SFX/::1697812018
 Chiptune_Adventures_1.ogg::AudioStreamOggVorbis::6502931404031137942::1697812017::1697812018::1::::<><>::

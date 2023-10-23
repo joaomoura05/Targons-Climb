@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1hgoq7iirckp"]
+
+[ext_resource type="Script" path="res://Menus/Menu.gd" id="1_wek7c"]
+[ext_resource type="Texture2D" uid="uid://ctdmp3au88vao" path="res://Menus/Imagem_Menu.jpg" id="2_ju7ks"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wek7c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -40.0
+offset_top = 32.0
+offset_right = 1176.0
+offset_bottom = 1056.0
+texture = ExtResource("2_ju7ks")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = -152.0
+offset_right = 256.0
+offset_bottom = -40.0
+grow_vertical = 0
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "PLAY"
+
+[node name="Options" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "OPTIONS
+"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://da0vr48rc08f2"]
+[gd_scene load_steps=28 format=3 uid="uid://cmqkfp0horgr4"]
 
 [ext_resource type="Texture2D" uid="uid://l085v72b51i" path="res://assets/rpg_village_tileset/village_tileset_16.png" id="1_hdqam"]
 [ext_resource type="PackedScene" uid="uid://hkqudkfuojsn" path="res://actors/player.tscn" id="2_4xlkj"]

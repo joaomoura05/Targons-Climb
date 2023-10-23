@@ -1,3 +1,7 @@
 res://Targon.tscn
-res://actors/player.tscn
-res://player.gd
+res://menu.tscn
+res://Menu.gd
+res://Menus/menu.tscn
+res://Menus/Menu.gd
+res://Menus/pause.tscn
+res://Menus/pause.gd
