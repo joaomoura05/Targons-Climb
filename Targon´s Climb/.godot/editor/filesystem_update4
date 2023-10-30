@@ -1,8 +1,4 @@
-res://Targon.tscn
+res://Menus/menu.tscn
 res://player.gd
-res://actors/player.tscn
-res://enemy.gd
-res://Menus/Menu.gd
-res://Menus/pause.gd
-res://Player.gd
-res://actors/enemy.tscn
+res://Level I.tscn
+res://Level II.tscn
