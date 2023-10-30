@@ -1,17 +1,20 @@
 extends CharacterBody2D
 
+var dead = false
 var speed = 25
-var player_chase = false
 var player = null
 
-func _physics_process(delta):
-	if player_chase:
-		position += (player.position - position)/speed
-		
-func _on_detection_area_body_entered(body):
-	player = body
-	player_chase = true
+func _process(delta):
+	if dead == false:
+		$AnimatedSprite2D.play("walk_down")
+		$AnimatedSprite2D.frame = 0
 
-func _on_detection_area_body_exited(body):
-	player = null
-	player_chase = false
+func _on_hurtbox_area_entered(area):
+	print("mateikkkkkk")
+	$AnimatedSprite2D.play("death")
+	dead = true
+
+
+func _on_animated_sprite_2d_animation_finished():
+	if $AnimatedSprite2D.animation == "death":
+		queue_free()

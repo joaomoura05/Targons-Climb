@@ -1,11 +1,10 @@
-[gd_scene load_steps=110 format=3 uid="uid://hkqudkfuojsn"]
+[gd_scene load_steps=113 format=3 uid="uid://hkqudkfuojsn"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_bpxrw"]
 [ext_resource type="Texture2D" uid="uid://cufe88o7n4tno" path="res://assets/Puny-Characters/Character-Base.png" id="2_f4tk6"]
 [ext_resource type="Texture2D" uid="uid://bbj2ob5jm4oy" path="res://assets/char/Raver_P0.png" id="2_q6u4o"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vhx5i"]
-radius = 15.3236
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxn1l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q56kr"]
 atlas = ExtResource("2_q6u4o")
@@ -440,9 +439,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ipaid")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit_down",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -463,9 +462,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hgwdu")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit_left",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -486,9 +485,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8qy67")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit_right",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -509,9 +508,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_upcpl")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit_up",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -812,28 +811,51 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_adfbr"]
-size = Vector2(14, 18)
+size = Vector2(48, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dspfb"]
+size = Vector2(48, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mrme"]
+size = Vector2(27, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vo6h"]
+size = Vector2(30, 20)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_bpxrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.75, -1.5)
-shape = SubResource("CircleShape2D_vhx5i")
+position = Vector2(2.08165e-12, 8)
+shape = SubResource("RectangleShape2D_vxn1l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_ekt8t")
-animation = &"stop_up"
-frame = 1
+animation = &"hit_down"
 speed_scale = 4.0
 
 [node name="attack" type="Area2D" parent="."]
 position = Vector2(47, 41)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
-position = Vector2(-25, -40)
+[node name="up" type="CollisionShape2D" parent="attack"]
+position = Vector2(-47, -55)
 shape = SubResource("RectangleShape2D_adfbr")
+disabled = true
+
+[node name="down" type="CollisionShape2D" parent="attack"]
+position = Vector2(-47, -11)
+shape = SubResource("RectangleShape2D_dspfb")
+disabled = true
+
+[node name="right" type="CollisionShape2D" parent="attack"]
+position = Vector2(-24.5, -33)
+shape = SubResource("RectangleShape2D_6mrme")
+disabled = true
+
+[node name="left" type="CollisionShape2D" parent="attack"]
+position = Vector2(-72, -33)
+shape = SubResource("RectangleShape2D_7vo6h")
 disabled = true
 
 [node name="camera" type="Camera2D" parent="."]
@@ -842,3 +864,5 @@ limit_top = -800
 limit_right = 750
 limit_bottom = 300
 editor_draw_limits = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
