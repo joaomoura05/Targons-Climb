@@ -1,4 +1,7 @@
+Button
 Label
+VBoxContainer
+ItemList
 TextureRect
 HBoxContainer
 MarginContainer
@@ -13,7 +16,5 @@ TileMap
 Timer
 AnimationPlayer
 ColorRect
-Button
-VBoxContainer
 Sprite2D
 CharacterBody2D

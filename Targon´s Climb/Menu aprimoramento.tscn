@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://8huim8ua5ceg"]
+
+[ext_resource type="Script" path="res://Menu aprimoramento.gd" id="1_xwrlf"]
+
+[node name="Menu aprimoramento" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 8.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xwrlf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 1104.0
+offset_bottom = 480.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "2 MOEDAS"
+
+[node name="Escolha 1" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "+ 100 HP"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "4 MOEDAS"
+
+[node name="Escolha 2" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "+ 20 DE ATAQUE"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "6 MOEDAS"
+
+[node name="Escolha 3" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "+ 100 HP | + 20 DE ATAQUE"
+
+[connection signal="pressed" from="VBoxContainer/Escolha 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Escolha 2" to="." method="_on_escolha_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Escolha 3" to="." method="_on_escolha_3_pressed"]

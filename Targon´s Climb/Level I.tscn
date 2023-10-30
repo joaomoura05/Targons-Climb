@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://nbk5weugcknb"]
+[gd_scene load_steps=41 format=3 uid="uid://nbk5weugcknb"]
 
 [ext_resource type="Texture2D" uid="uid://b4t0tl0ouq8ja" path="res://assets/Texture/TX Tileset Grass.png" id="1_mm841"]
 [ext_resource type="Texture2D" uid="uid://dtctveuxpx7r7" path="res://assets/Texture/TX Struct.png" id="2_ps3kg"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cg2ebgb185q1c" path="res://assets/Texture/TX Tileset Stone Ground.png" id="7_2npbr"]
 [ext_resource type="PackedScene" uid="uid://bkvql0noc4g15" path="res://actors/enemy.tscn" id="8_3ekmj"]
 [ext_resource type="Script" path="res://Passagem_1.gd" id="9_esfua"]
-[ext_resource type="Texture2D" uid="uid://bxorhvu675xvy" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin (16 x 16).png" id="12_fodjv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mvxye"]
 texture = ExtResource("1_mm841")
@@ -2852,11 +2851,6 @@ size = Vector2(54, 29.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gfs8y"]
 size = Vector2(126, 27)
 
-[sub_resource type="GDScript" id="GDScript_prmli"]
-
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_6sgyf"]
-frame_0/texture = ExtResource("12_fodjv")
-
 [node name="Level I" type="Node2D"]
 
 [node name="Terreno" type="TileMap" parent="."]
@@ -3027,44 +3021,5 @@ position = Vector2(0, -14)
 shape = SubResource("RectangleShape2D_gfs8y")
 
 [node name="Node2D" type="Node2D" parent="."]
-
-[node name="HUD" type="CanvasLayer" parent="."]
-
-[node name="control" type="Control" parent="HUD"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -578.0
-offset_top = -346.0
-offset_right = -578.0
-offset_bottom = -346.0
-grow_horizontal = 2
-grow_vertical = 2
-script = SubResource("GDScript_prmli")
-
-[node name="container" type="MarginContainer" parent="HUD/control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 8
-
-[node name="coins_container" type="HBoxContainer" parent="HUD/control/container"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-
-[node name="coins_icon" type="TextureRect" parent="HUD/control/container/coins_container"]
-layout_mode = 2
-texture = SubResource("AnimatedTexture_6sgyf")
-
-[node name="coins_counter" type="Label" parent="HUD/control/container/coins_container"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 16
-text = "0000"
 
 [connection signal="body_entered" from="Passagem" to="Passagem" method="_on_body_entered"]

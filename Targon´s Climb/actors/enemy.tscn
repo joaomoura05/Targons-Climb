@@ -136,7 +136,7 @@ size = Vector2(18, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75odb"]
 size = Vector2(33, 21.75)
 
-[node name="enemy" type="CharacterBody2D"]
+[node name="enemy_slime" type="CharacterBody2D"]
 position = Vector2(400, 133)
 script = ExtResource("1_n42ch")
 

@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698687511
-AnimatedSprite2D.gd::GDScript::-1::1698673944::0::1::::<>AnimatedSprite2D<>::
+::res://::1698707140
+AnimatedSprite2D.gd::GDScript::-1::1698706964::0::1::::<>AnimatedSprite2D<>::
 bg_music.tscn::PackedScene::1735576571693204853::1698673944::0::1::::<><>::uid://cywclhvuipvak
-enemy.gd::GDScript::-1::1698673944::0::1::::<>CharacterBody2D<>::
+enemy.gd::GDScript::-1::1698706964::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::3176555927157269115::1698673920::1698673920::1::::<><>::
-Level I.tscn::PackedScene::915181251403030227::1698687407::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://xqo5eqb8e07q::::res://collectibles/coin.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>res://Passagem_1.gd<>uid://bxorhvu675xvy::::res://assets/Mini FX, Items & UI/Common Pick-ups/Coin (16 x 16).png
-Level II.tscn::PackedScene::6966551983120235398::1698687407::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn
-Passagem_1.gd::GDScript::-1::1698681777::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1698687091::0::1::::<>CharacterBody2D<>::
+Level I.tscn::PackedScene::915181251403030227::1698707053::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://xqo5eqb8e07q::::res://collectibles/coin.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>res://Passagem_1.gd
+Level II.tscn::PackedScene::6966551983120235398::1698707053::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn
+Passagem_1.gd::GDScript::-1::1698706964::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1698707023::0::1::::<>CharacterBody2D<>::
 Targon.gd::GDScript::-1::1698673944::0::1::::<>Node2D<>::
-::res://actors/::1698682644
-enemy.tscn::PackedScene::3132653502332024754::1698682644::0::1::::<><>::res://enemy.gd<>uid://of0ow71ypmxo::::res://assets/Puny-Characters/Slime.png<>uid://cy70ptihf33ls::::res://Hurtbox & Hitbox/hurtbox.tscn
-player.tscn::PackedScene::512973044041745509::1698682644::0::1::::<><>::res://player.gd<>uid://cufe88o7n4tno::::res://assets/Puny-Characters/Character-Base.png<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
+::res://actors/::1698707054
+enemy.tscn::PackedScene::3132653502332024754::1698707054::0::1::::<><>::res://enemy.gd<>uid://of0ow71ypmxo::::res://assets/Puny-Characters/Slime.png<>uid://cy70ptihf33ls::::res://Hurtbox & Hitbox/hurtbox.tscn
+player.tscn::PackedScene::512973044041745509::1698707053::0::1::::<><>::res://player.gd<>uid://cufe88o7n4tno::::res://assets/Puny-Characters/Character-Base.png<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
 ::res://assets/::1698683845
 ::res://assets/char/::1698673967
 Raver_P0.png::CompressedTexture2D::72848629009724376::1698673967::1698673967::1::::<><>::
@@ -96,16 +96,16 @@ Bow.png::CompressedTexture2D::6727699173855616713::1698673967::1698673967::1::::
 Crossbow.png::CompressedTexture2D::7556262092844796488::1698673967::1698673967::1::::<><>::
 Knife.png::CompressedTexture2D::3841651287403505613::1698673967::1698673967::1::::<><>::
 spear.png::CompressedTexture2D::9014836579340543265::1698673967::1698673967::1::::<><>::
-::res://collectibles/::1698687385
-coin.gd::GDScript::-1::1698685090::0::1::::<>Area2D<>::
-coin.tscn::PackedScene::1648277294355571588::1698687385::0::1::::<><>::res://collectibles/coin.gd<>uid://bxorhvu675xvy::::res://assets/Mini FX, Items & UI/Common Pick-ups/Coin (16 x 16).png<>uid://cdepk0fsvujry::::res://assets/Mini FX, Items & UI/Effects/Yellow_Sparkle (16 x 16).png
+::res://collectibles/::1698707053
+coin.gd::GDScript::-1::1698706964::0::1::::<>Area2D<>::
+coin.tscn::PackedScene::1648277294355571588::1698707053::0::1::::<><>::res://collectibles/coin.gd<>uid://bxorhvu675xvy::::res://assets/Mini FX, Items & UI/Common Pick-ups/Coin (16 x 16).png<>uid://cdepk0fsvujry::::res://assets/Mini FX, Items & UI/Effects/Yellow_Sparkle (16 x 16).png
 ::res://Hurtbox & Hitbox/::1698673928
 hitbox.tscn::PackedScene::1878292202912104304::1698673928::0::1::::<><>::
 hurtbox.tscn::PackedScene::6524979425184578184::1698673928::0::1::::<><>::
-::res://Menus/::1698687406
+::res://Menus/::1698707052
 Imagem_Menu.jpg::CompressedTexture2D::6113379392200700666::1698673961::1698673961::1::::<><>::
-Menu.gd::GDScript::-1::1698681831::0::1::::<>Control<>::
-menu.tscn::PackedScene::4226171455813817331::1698687406::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
+Menu.gd::GDScript::-1::1698706964::0::1::::<>Control<>::
+menu.tscn::PackedScene::4226171455813817331::1698707052::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
 pause.gd::GDScript::-1::1698673961::0::1::::<>Control<>::
 pause.tscn::PackedScene::1116270681599487286::1698673961::0::1::::<><>::res://Menus/pause.gd
 ::res://SFX/::1697737282
