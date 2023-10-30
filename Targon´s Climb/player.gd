@@ -46,7 +46,7 @@ func player_movement(delta):
 	else:
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
-		
+
 	move_and_slide()
 	
 	
@@ -56,7 +56,6 @@ func attack():
 	anim.play(anim.animation.replace("stop","hit"))
 	attack_dir = anim.animation.replace("hit_","")
 	if attack_dir == "left":
-		print("tesste")
 		$attack/left.disabled = false;
 	if attack_dir == "right":
 		$attack/right.disabled = false;
@@ -77,3 +76,7 @@ func _on_animated_sprite_2d_animation_finished():
 		if attack_dir == "down":
 			$attack/down.disabled = true;
 	
+
+
+func _on_hurtbox_area_entered(area):
+	print("morrikkkkk")

@@ -1,7 +1,7 @@
 CollisionShape2D
+Area2D
 Timer
 AnimationPlayer
-Area2D
 ColorRect
 TextureRect
 Button

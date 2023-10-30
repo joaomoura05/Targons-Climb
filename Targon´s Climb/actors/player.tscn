@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=3 uid="uid://hkqudkfuojsn"]
+[gd_scene load_steps=114 format=3 uid="uid://hkqudkfuojsn"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_bpxrw"]
 [ext_resource type="Texture2D" uid="uid://cufe88o7n4tno" path="res://assets/Puny-Characters/Character-Base.png" id="2_f4tk6"]
@@ -822,6 +822,8 @@ size = Vector2(27, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vo6h"]
 size = Vector2(30, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tiqno"]
+
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_bpxrw")
 
@@ -832,7 +834,7 @@ shape = SubResource("RectangleShape2D_vxn1l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_ekt8t")
-animation = &"hit_down"
+animation = &"stop_up"
 speed_scale = 4.0
 
 [node name="attack" type="Area2D" parent="."]
@@ -865,4 +867,11 @@ limit_right = 750
 limit_bottom = 300
 editor_draw_limits = true
 
+[node name="Hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_tiqno")
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
