@@ -7,12 +7,12 @@ func _ready():
 
 
 func _on_escolha_1_pressed():
-	get_tree().change_scene_to_file("res://Level II.tscn")
+	get_tree().change_scene_to_file("res://Levels/Level II.tscn")
 
 
 func _on_escolha_2_pressed():
-	get_tree().change_scene_to_file("res://Level II.tscn")
+	get_tree().change_scene_to_file("res://Levels/Level II.tscn")
 
 
 func _on_escolha_3_pressed():
-	get_tree().change_scene_to_file("res://Level II.tscn")
+	get_tree().change_scene_to_file("res://Levels/Level II.tscn")

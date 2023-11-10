@@ -11,7 +11,7 @@ func _ready():
 
 # Play buttom
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://Level I.tscn")
+	get_tree().change_scene_to_file("res://Levels/Level I.tscn")
 
 # Options buttom
 func _on_options_pressed():

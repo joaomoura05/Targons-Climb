@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://8huim8ua5ceg"]
 
-[ext_resource type="Script" path="res://Menu aprimoramento.gd" id="1_xwrlf"]
+[ext_resource type="Script" path="res://Menus/Menu aprimoramento.gd" id="1_xwrlf"]
 
 [node name="Menu aprimoramento" type="Control"]
 layout_mode = 3

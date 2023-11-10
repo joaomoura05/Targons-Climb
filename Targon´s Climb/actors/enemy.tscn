@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://bkvql0noc4g15"]
 
-[ext_resource type="Script" path="res://enemy.gd" id="1_n42ch"]
+[ext_resource type="Script" path="res://actors/enemy.gd" id="1_n42ch"]
 [ext_resource type="Texture2D" uid="uid://of0ow71ypmxo" path="res://assets/Puny-Characters/Slime.png" id="2_h81mr"]
 [ext_resource type="PackedScene" uid="uid://cy70ptihf33ls" path="res://Hurtbox & Hitbox/hurtbox.tscn" id="3_nwxgq"]
 

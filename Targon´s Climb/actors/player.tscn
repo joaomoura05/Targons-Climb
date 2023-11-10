@@ -1,6 +1,6 @@
 [gd_scene load_steps=114 format=3 uid="uid://hkqudkfuojsn"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_bpxrw"]
+[ext_resource type="Script" path="res://actors/player.gd" id="1_bpxrw"]
 [ext_resource type="Texture2D" uid="uid://cufe88o7n4tno" path="res://assets/Puny-Characters/Character-Base.png" id="2_f4tk6"]
 [ext_resource type="Texture2D" uid="uid://bbj2ob5jm4oy" path="res://assets/char/Raver_P0.png" id="2_q6u4o"]
 

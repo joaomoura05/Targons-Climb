@@ -1,14 +1,2 @@
-res://actors/enemy.tscn
-res://player.gd
+res://Targon.tscn
 res://Menus/menu.tscn
-res://Level I.tscn
-res://Level II.tscn
-res://collectibles/coin.tscn
-res://actors/player.tscn
-res://AnimatedSprite2D.gd
-res://collectibles/coin.gd
-res://enemy.gd
-res://Menus/Menu.gd
-res://Passagem_1.gd
-res://Menu aprimoramento.tscn
-res://Menu aprimoramento.gd
