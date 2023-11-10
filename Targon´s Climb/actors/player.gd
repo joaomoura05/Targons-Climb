@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var anim = $AnimatedSprite2D
+@onready var anim = $Sprites
 
 const max_speed = 150
 const accel = 750

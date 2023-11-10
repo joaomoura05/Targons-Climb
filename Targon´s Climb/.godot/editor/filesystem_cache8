@@ -1,31 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699651444
+::res://::1699652478
 bg_music.tscn::PackedScene::1735576571693204853::1699650336::0::1::::<><>::uid://cywclhvuipvak
-Targon.tscn::PackedScene::7786671307130166251::1699651342::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
-::res://actors/::1699650923
+Targon.tscn::PackedScene::7786671307130166251::1699651580::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
+::res://actors/::1699652069
 enemy.gd::GDScript::-1::1699650556::0::1::::<>CharacterBody2D<>::
 enemy.tscn::PackedScene::3132653502332024754::1699650923::0::1::::<><>::res://actors/enemy.gd<>uid://of0ow71ypmxo
 player.gd::GDScript::-1::1699650556::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::512973044041745509::1699650870::0::1::::<><>::res://actors/player.gd<>uid://cufe88o7n4tno
-::res://assets/::1699650638
-::res://assets/char/::1699650353
+::res://assets/::1699652069
+::res://assets/char/::1699652069
 Raver_P0.png::CompressedTexture2D::72848629009724376::1699650336::1699650336::1::::<><>::
-::res://assets/Mini FX, Items & UI/::1699650638
+::res://assets/Mini FX, Items & UI/::1699652069
 LICENSE.txt::TextFile::-1::1699650336::0::1::::<><>::
-::res://assets/Mini FX, Items & UI/Common Pick-ups/::1699650638
+::res://assets/Mini FX, Items & UI/Common Pick-ups/::1699652069
 Coin (16 x 16).png::CompressedTexture2D::4030711200697955598::1699650336::1699650439::1::::<><>::
 Health_Kit (16 x 16).png::CompressedTexture2D::1054368447815853979::1699650336::1699650439::1::::<><>::
 Heart_Spin (16 x 16).png::CompressedTexture2D::8053277415080722320::1699650336::1699650439::1::::<><>::
 Small_Coin (16 x 16).png::CompressedTexture2D::5983321732151952083::1699650336::1699650439::1::::<><>::
 Treasure_Chest (32 x 16).png::CompressedTexture2D::2599482205555845353::1699650336::1699650439::1::::<><>::
 Wrapped_Presents (16 x 16).png::CompressedTexture2D::6812121371225374435::1699650336::1699650439::1::::<><>::
-::res://assets/Mini FX, Items & UI/Effects/::1699650638
+::res://assets/Mini FX, Items & UI/Effects/::1699652069
 Bright_Sparkle (16 x 16).png::CompressedTexture2D::4404960189521453129::1699650336::1699650439::1::::<><>::
 Cloud_Poof (16 x 16).png::CompressedTexture2D::8016451317571782907::1699650336::1699650439::1::::<><>::
 Dust (16 x 16).png::CompressedTexture2D::3202599232936237985::1699650336::1699650439::1::::<><>::
 Explosion_Poof (16 x 16).png::CompressedTexture2D::8030203277449381280::1699650336::1699650439::1::::<><>::
 Yellow_Sparkle (16 x 16).png::CompressedTexture2D::4992595343801557742::1699650336::1699650439::1::::<><>::
-::res://assets/Mini FX, Items & UI/Food Items/::1699650638
+::res://assets/Mini FX, Items & UI/Food Items/::1699652069
 Bottled_Drinks (16 x 16).png::CompressedTexture2D::1081895126908160970::1699650336::1699650439::1::::<><>::
 Burger_&_Fries (16 x 16).png::CompressedTexture2D::5448344798741256879::1699650336::1699650439::1::::<><>::
 Cake_Slices (16 x 16).png::CompressedTexture2D::1612256415480309190::1699650336::1699650439::1::::<><>::
@@ -38,7 +38,7 @@ Pancake_Stack (16 x 16).png::CompressedTexture2D::4015646114989267642::169965033
 Salad_Bowl (16 x 16).png::CompressedTexture2D::2919165918489083594::1699650336::1699650439::1::::<><>::
 Sushi_Variety (16 x 16).png::CompressedTexture2D::2873460471681646070::1699650336::1699650439::1::::<><>::
 Wrapped_Candies (16 x 16).png::CompressedTexture2D::2709629093529040522::1699650336::1699650439::1::::<><>::
-::res://assets/Mini FX, Items & UI/Mini UI/::1699650638
+::res://assets/Mini FX, Items & UI/Mini UI/::1699652069
 Health_Indicator_Black_Outline (8 x 8).png::CompressedTexture2D::2545489802811284935::1699650336::1699650439::1::::<><>::
 Health_Indicator_White_Outline (8 x 8).png::CompressedTexture2D::3000195610122719442::1699650336::1699650439::1::::<><>::
 Mouse_Icons_Outlined (16 x 16).png::CompressedTexture2D::3697050769724961327::1699650336::1699650439::1::::<><>::
@@ -46,7 +46,7 @@ Mouse_Icons_Outlined_Drop-shadowed (16 x 16).png::CompressedTexture2D::689935892
 Speech_Emotes (16 x 16).png::CompressedTexture2D::3789660112643794981::1699650336::1699650439::1::::<><>::
 Timer_Coin_Numbers_Drop-shadowed (8 x 8).png::CompressedTexture2D::6744739633746024174::1699650336::1699650439::1::::<><>::
 Timer_Coin_Numbers_Outlined (8 x 8).png::CompressedTexture2D::3922042019710575656::1699650336::1699650439::1::::<><>::
-::res://assets/Puny-Characters/::1699650353
+::res://assets/Puny-Characters/::1699652069
 Archer-Green.png::CompressedTexture2D::8940864440425554771::1699650336::1699650336::1::::<><>::
 Archer-Purple.png::CompressedTexture2D::4089734323710634328::1699650336::1699650336::1::::<><>::
 Character-Base.png::CompressedTexture2D::6187243684457360844::1699650336::1699650336::1::::<><>::
@@ -67,15 +67,15 @@ Soldier-Red.png::CompressedTexture2D::6882650962787608587::1699650336::169965033
 Soldier-Yellow.png::CompressedTexture2D::8926572998662418131::1699650336::1699650336::1::::<><>::
 Warrior-Blue.png::CompressedTexture2D::711519901617142720::1699650336::1699650336::1::::<><>::
 Warrior-Red.png::CompressedTexture2D::2099039746811883273::1699650336::1699650336::1::::<><>::
-::res://assets/Puny-Characters/Environment/::1699650354
+::res://assets/Puny-Characters/Environment/::1699652069
 Dirt.png::CompressedTexture2D::4078654708073147255::1699650336::1699650336::1::::<><>::
 Grass1.png::CompressedTexture2D::560948330031486616::1699650336::1699650336::1::::<><>::
 Grass2.png::CompressedTexture2D::4753673644426499992::1699650336::1699650336::1::::<><>::
 Tree.png::CompressedTexture2D::8453448405134083379::1699650336::1699650336::1::::<><>::
-::res://assets/rpg_village_tileset/::1699650627
+::res://assets/rpg_village_tileset/::1699652069
 readme.txt::TextFile::-1::1699650336::0::1::::<><>::
 village_tileset_16.png::CompressedTexture2D::24286620944167276::1699650336::1699650336::1::::<><>::
-::res://assets/Texture/::1699650439
+::res://assets/Texture/::1699652069
 TX Plant.png::CompressedTexture2D::1753691590997917341::1699650336::1699650439::1::::<><>::
 TX Player.png::CompressedTexture2D::948325110466735190::1699650336::1699650439::1::::<><>::
 TX Props.png::CompressedTexture2D::3429669736343691666::1699650336::1699650439::1::::<><>::
@@ -85,13 +85,13 @@ TX Struct.png::CompressedTexture2D::8498170202300093930::1699650336::1699650439:
 TX Tileset Grass.png::CompressedTexture2D::4462672798466982518::1699650336::1699650439::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::5249957600250505014::1699650336::1699650439::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::5494408136305130450::1699650336::1699650439::1::::<><>::
-::res://assets/weapon/::1699650638
+::res://assets/weapon/::1699652069
 Arrow.png::CompressedTexture2D::2332057770457735880::1699650336::1699650336::1::::<><>::
 Bow.png::CompressedTexture2D::6727699173855616713::1699650336::1699650336::1::::<><>::
 Crossbow.png::CompressedTexture2D::7556262092844796488::1699650336::1699650336::1::::<><>::
 Knife.png::CompressedTexture2D::3841651287403505613::1699650336::1699650336::1::::<><>::
 spear.png::CompressedTexture2D::9014836579340543265::1699650336::1699650336::1::::<><>::
-::res://collectibles/::1699650638
+::res://collectibles/::1699652069
 coin.gd::GDScript::-1::1699650556::0::1::::<>Area2D<>::
 coin.tscn::PackedScene::1648277294355571588::1699650336::0::1::::<><>::res://collectibles/coin.gd<>uid://bxorhvu675xvy
 ::res://Hurtbox & Hitbox/::1699650638
@@ -100,17 +100,17 @@ hurtbox.tscn::PackedScene::6524979425184578184::1699650336::0::1::::<><>::
 ::res://Levels/::1699651336
 Level I.tscn::PackedScene::915181251403030227::1699651025::0::1::::<><>::uid://b4t0tl0ouq8ja
 Level II.tscn::PackedScene::6966551983120235398::1699650336::0::1::::<><>::uid://b4t0tl0ouq8ja
-::res://Menus/::1699651342
+::res://Menus/::1699652069
 Imagem_Menu.jpg::CompressedTexture2D::6113379392200700666::1699650336::1699650440::1::::<><>::
 Menu aprimoramento.gd::GDScript::-1::1699651042::0::1::::<>Control<>::
 Menu aprimoramento.tscn::PackedScene::2331911792708693062::1699650886::0::1::::<><>::res://Menus/Menu aprimoramento.gd
 Menu.gd::GDScript::-1::1699651042::0::1::::<>Control<>::
-menu.tscn::PackedScene::4226171455813817331::1699651342::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
+menu.tscn::PackedScene::4226171455813817331::1699651554::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
 Passagem_1.gd::GDScript::-1::1699650556::0::1::::<>Area2D<>::
 pause.gd::GDScript::-1::1699650336::0::1::::<>Control<>::
 pause.tscn::PackedScene::1116270681599487286::1699650336::0::1::::<><>::res://Menus/pause.gd
-::res://SFX/::1699650638
-::res://SFX/SFX/::1699650638
+::res://SFX/::1699652069
+::res://SFX/SFX/::1699652069
 Chiptune_Adventures_1.ogg::AudioStreamOggVorbis::6502931404031137942::1699650336::1699650336::1::::<><>::
 coin_SFX.wav::AudioStreamWAV::569432575311689366::1699650336::1699650336::1::::<><>::
 jump1.ogg::AudioStreamOggVorbis::7432737549171993264::1699650336::1699650336::1::::<><>::

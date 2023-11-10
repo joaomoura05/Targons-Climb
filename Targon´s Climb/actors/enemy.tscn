@@ -134,7 +134,7 @@ size = Vector2(18, 21.875)
 size = Vector2(18, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75odb"]
-size = Vector2(33, 21.75)
+size = Vector2(25, 16)
 
 [node name="enemy_slime" type="CharacterBody2D"]
 position = Vector2(400, 133)
@@ -161,7 +161,7 @@ shape = SubResource("RectangleShape2D_nju14")
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(0.5, 0.125)
+position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_75odb")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

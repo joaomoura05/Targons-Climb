@@ -1,2 +1,5 @@
+res://actors/enemy.tscn
+res://actors/enemy.gd
 res://Targon.tscn
-res://Menus/menu.tscn
+res://actors/player.tscn
+res://actors/player.gd

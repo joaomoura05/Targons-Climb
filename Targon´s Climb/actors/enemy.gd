@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 @onready var attack_timer = $AttackTimer
 @onready var player = $"../player"
+@onready var sword = $"../player/attack"
 
 var dead = false
 var speed = 100
@@ -57,7 +58,9 @@ func _on_AttackTimer_timeout():
 	state = ATTACK
 
 func _on_hurtbox_area_entered(area):
-	if area.get_parent() == player:
+#	print(area)
+#	print(sword)
+	if area == sword:
 		print("mateikkkkkk")
 		$AnimatedSprite2D.play("death")
 		dead = true
