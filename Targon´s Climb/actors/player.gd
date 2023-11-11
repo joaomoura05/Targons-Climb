@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var anim = $Sprites
+@onready var enemy = $"../enemy"
 
 const max_speed = 150
 const accel = 750
@@ -79,4 +80,5 @@ func _on_animated_sprite_2d_animation_finished():
 
 
 func _on_hurtbox_area_entered(area):
-	print("morrikkkkk")
+	if area.get_parent() == enemy:
+		print('morrikkkk')

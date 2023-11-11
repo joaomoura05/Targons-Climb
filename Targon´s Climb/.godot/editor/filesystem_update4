@@ -1,5 +1,6 @@
 res://actors/enemy.tscn
 res://actors/enemy.gd
-res://Targon.tscn
 res://actors/player.tscn
 res://actors/player.gd
+res://Menus/Passagem_1.gd
+res://collectibles/coin.gd

@@ -869,7 +869,7 @@ editor_draw_limits = true
 
 [node name="Hurtbox" type="Area2D" parent="."]
 
-[node name="Espada" type="CollisionShape2D" parent="Hurtbox"]
+[node name="HurtBody" type="CollisionShape2D" parent="Hurtbox"]
 position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_tiqno")
 

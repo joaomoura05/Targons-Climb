@@ -4,8 +4,13 @@ extends CharacterBody2D
 @onready var attack_timer = $AttackTimer
 @onready var player = $"../player"
 @onready var sword = $"../player/attack"
+@onready var enemySprites = $AnimatedSprite2D
+@onready var enemyHurtbox = $Hurtbox
+@onready var enemyBody = $Body
 
+var health = 100
 var dead = false
+var hurt = false
 var speed = 100
 var max_speed = 150
 var target_position = 0;
@@ -25,8 +30,8 @@ func _ready():
 	randomnum = rng.randf()
 
 func _physics_process(delta):
-	if dead == false:
-		$AnimatedSprite2D.play("walk")
+	if dead == false and hurt == false:
+		enemySprites.play("walk")
 		match state:
 			SURROUND:
 				move(get_circle_position(randomnum), delta)
@@ -35,7 +40,7 @@ func _physics_process(delta):
 			HIT:
 				move(player.global_position, delta)
 				print("HIT")
-				$AnimatedSprite2D.play("hit")
+				enemySprites.play("hit")
 
 func move(target, delta):
 	var direction = (target - global_position).normalized() 
@@ -58,14 +63,19 @@ func _on_AttackTimer_timeout():
 	state = ATTACK
 
 func _on_hurtbox_area_entered(area):
-#	print(area)
-#	print(sword)
-	if area == sword:
-		print("mateikkkkkk")
-		$AnimatedSprite2D.play("death")
-		dead = true
+	if area == sword && dead == false:
+		hurt = true
+		enemySprites.play("hurt")
+		health-=20
+		if health <= 0:
+			print("mateikkkkkk")
+			dead = true
+			enemyBody.set_deferred("disabled",true)
+			enemySprites.play("death")
 
 
 func _on_animated_sprite_2d_animation_finished():
-	if $AnimatedSprite2D.animation == "death":
+	if enemySprites.animation == "hurt":
+		hurt = false
+	if enemySprites.animation == "death":
 		queue_free()

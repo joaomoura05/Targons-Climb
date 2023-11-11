@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bkvql0noc4g15"]
+[gd_scene load_steps=24 format=3 uid="uid://bkvql0noc4g15"]
 
 [ext_resource type="Script" path="res://actors/enemy.gd" id="1_n42ch"]
 [ext_resource type="Texture2D" uid="uid://of0ow71ypmxo" path="res://assets/Puny-Characters/Slime.png" id="2_h81mr"]
@@ -36,13 +36,17 @@ region = Rect2(416, 0, 32, 32)
 atlas = ExtResource("2_h81mr")
 region = Rect2(448, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6bhqi"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2njsd"]
 atlas = ExtResource("2_h81mr")
-region = Rect2(160, 0, 32, 32)
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2ysh0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_x23o8"]
 atlas = ExtResource("2_h81mr")
-region = Rect2(192, 0, 32, 32)
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4oul"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dbsgk"]
 atlas = ExtResource("2_h81mr")
@@ -97,13 +101,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6bhqi")
+"texture": SubResource("AtlasTexture_2njsd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2ysh0")
+"texture": SubResource("AtlasTexture_x23o8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4oul")
 }],
-"loop": true,
-"name": &"hit",
+"loop": false,
+"name": &"hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -128,7 +135,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qy6ce"]
-size = Vector2(18, 21.875)
+size = Vector2(25, 21.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nju14"]
 size = Vector2(18, 20)
@@ -149,10 +156,10 @@ animation = &"walk"
 [node name="Hurtbox" parent="." instance=ExtResource("3_nwxgq")]
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
-position = Vector2(2, -1)
+position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_qy6ce")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="."]
 position = Vector2(2, -2)
 shape = SubResource("RectangleShape2D_nju14")
 
@@ -160,9 +167,10 @@ shape = SubResource("RectangleShape2D_nju14")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="Hit" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_75odb")
+disabled = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]

@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699652478
+::res://::1699727749
 bg_music.tscn::PackedScene::1735576571693204853::1699650336::0::1::::<><>::uid://cywclhvuipvak
-Targon.tscn::PackedScene::7786671307130166251::1699651580::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
-::res://actors/::1699652069
-enemy.gd::GDScript::-1::1699650556::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::3132653502332024754::1699650923::0::1::::<><>::res://actors/enemy.gd<>uid://of0ow71ypmxo
-player.gd::GDScript::-1::1699650556::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::512973044041745509::1699650870::0::1::::<><>::res://actors/player.gd<>uid://cufe88o7n4tno
+Targon.tscn::PackedScene::7786671307130166251::1699653243::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
+::res://actors/::1699656199
+enemy.gd::GDScript::-1::1699653500::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::3132653502332024754::1699653567::0::1::::<><>::res://actors/enemy.gd<>uid://of0ow71ypmxo::::res://assets/Puny-Characters/Slime.png<>uid://cy70ptihf33ls::::res://Hurtbox & Hitbox/hurtbox.tscn
+player.gd::GDScript::-1::1699653241::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::512973044041745509::1699653531::0::1::::<><>::res://actors/player.gd<>uid://cufe88o7n4tno::::res://assets/Puny-Characters/Character-Base.png<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
 ::res://assets/::1699652069
 ::res://assets/char/::1699652069
 Raver_P0.png::CompressedTexture2D::72848629009724376::1699650336::1699650336::1::::<><>::
@@ -105,7 +105,7 @@ Imagem_Menu.jpg::CompressedTexture2D::6113379392200700666::1699650336::169965044
 Menu aprimoramento.gd::GDScript::-1::1699651042::0::1::::<>Control<>::
 Menu aprimoramento.tscn::PackedScene::2331911792708693062::1699650886::0::1::::<><>::res://Menus/Menu aprimoramento.gd
 Menu.gd::GDScript::-1::1699651042::0::1::::<>Control<>::
-menu.tscn::PackedScene::4226171455813817331::1699651554::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
+menu.tscn::PackedScene::4226171455813817331::1699651554::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao
 Passagem_1.gd::GDScript::-1::1699650556::0::1::::<>Area2D<>::
 pause.gd::GDScript::-1::1699650336::0::1::::<>Control<>::
 pause.tscn::PackedScene::1116270681599487286::1699650336::0::1::::<><>::res://Menus/pause.gd
