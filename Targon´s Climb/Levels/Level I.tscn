@@ -3020,6 +3020,4 @@ script = ExtResource("10_85a3h")
 position = Vector2(0, -14)
 shape = SubResource("RectangleShape2D_gfs8y")
 
-[node name="Node2D" type="Node2D" parent="."]
-
 [connection signal="body_entered" from="Passagem" to="Passagem" method="_on_body_entered"]

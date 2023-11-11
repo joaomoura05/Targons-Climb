@@ -1,5 +1,9 @@
 res://actors/enemy.tscn
-res://actors/enemy.gd
-res://Targon.tscn
 res://actors/player.tscn
-res://actors/player.gd
+res://Targon.tscn
+res://Menus/menu.tscn
+res://Menus/Menu aprimoramento.tscn
+res://Menus/pause.tscn
+res://Levels/Level I.tscn
+res://Menus/Passagem_1.gd
+res://Levels/Level II.tscn

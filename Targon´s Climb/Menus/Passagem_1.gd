@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	get_tree().change_scene_to_file("res://Menu aprimoramento.tscn")
+	get_tree().change_scene_to_file("res://Menus/Menu aprimoramento.tscn")
