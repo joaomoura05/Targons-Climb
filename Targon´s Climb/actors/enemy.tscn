@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bkvql0noc4g15"]
+[gd_scene load_steps=34 format=3 uid="uid://bkvql0noc4g15"]
 
 [ext_resource type="Script" path="res://actors/enemy.gd" id="1_n42ch"]
 [ext_resource type="Texture2D" uid="uid://of0ow71ypmxo" path="res://assets/Puny-Characters/Slime.png" id="2_h81mr"]
@@ -35,6 +35,30 @@ region = Rect2(416, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_47pxf"]
 atlas = ExtResource("2_h81mr")
 region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkegf"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jaqt5"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r7dx"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axysp"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xhu3"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1co1q"]
+atlas = ExtResource("2_h81mr")
+region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2njsd"]
 atlas = ExtResource("2_h81mr")
@@ -101,6 +125,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_nkegf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jaqt5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7r7dx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axysp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xhu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1co1q")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_2njsd")
 }, {
 "duration": 1.0,
@@ -134,45 +181,87 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qy6ce"]
-size = Vector2(25, 21.875)
+[sub_resource type="CircleShape2D" id="CircleShape2D_dc56f"]
+radius = 13.0863
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nju14"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qgjn3"]
+radius = 12.0
+height = 28.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mymwl"]
 size = Vector2(18, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_75odb"]
-size = Vector2(25, 16)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wr57"]
+size = Vector2(18, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hddh"]
+size = Vector2(24, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_amhfy"]
+size = Vector2(24, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_feau1"]
+size = Vector2(59, 46.5)
 
 [node name="enemy_slime" type="CharacterBody2D"]
 position = Vector2(400, 133)
 script = ExtResource("1_n42ch")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprites" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(1.78125, 1.625)
 sprite_frames = SubResource("SpriteFrames_cqtd2")
-animation = &"walk"
+animation = &"hit"
 
 [node name="Hurtbox" parent="." instance=ExtResource("3_nwxgq")]
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
-position = Vector2(1.5, -1)
-shape = SubResource("RectangleShape2D_qy6ce")
+position = Vector2(2, -1.5)
+shape = SubResource("CircleShape2D_dc56f")
 
 [node name="Body" type="CollisionShape2D" parent="."]
-position = Vector2(2, -2)
-shape = SubResource("RectangleShape2D_nju14")
+position = Vector2(2, -1)
+shape = SubResource("CapsuleShape2D_qgjn3")
 
-[node name="AttackTimer" type="Timer" parent="."]
+[node name="Attack" type="Area2D" parent="."]
+
+[node name="left" type="CollisionShape2D" parent="Attack"]
+position = Vector2(-18.9141, -1)
+shape = SubResource("RectangleShape2D_mymwl")
+disabled = true
+
+[node name="right" type="CollisionShape2D" parent="Attack"]
+position = Vector2(23, -1)
+shape = SubResource("RectangleShape2D_5wr57")
+disabled = true
+
+[node name="up" type="CollisionShape2D" parent="Attack"]
+position = Vector2(2, -16.25)
+shape = SubResource("RectangleShape2D_7hddh")
+disabled = true
+
+[node name="down" type="CollisionShape2D" parent="Attack"]
+position = Vector2(2, 16.5)
+shape = SubResource("RectangleShape2D_amhfy")
+disabled = true
+
+[node name="StateTimer" type="Timer" parent="."]
+wait_time = 5.0
 
 [node name="Hitbox" type="Area2D" parent="."]
 
-[node name="Hit" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(1.5, -1)
-shape = SubResource("RectangleShape2D_75odb")
-disabled = true
+[node name="Hitbox" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_feau1")
 
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[node name="AttackTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="animation_finished" from="Sprites" to="." method="_on_sprites_animation_finished"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="area_entered" from="Attack" to="." method="_on_attack_area_entered"]
+[connection signal="timeout" from="StateTimer" to="." method="_on_state_timer_timeout"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
 
 [editable path="Hurtbox"]

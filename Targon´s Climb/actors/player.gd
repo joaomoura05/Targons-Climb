@@ -1,22 +1,28 @@
 extends CharacterBody2D
 
 @onready var anim = $Sprites
-@onready var enemy = $"../enemy"
+@onready var enemy = $"../enemy/Attack"
+@onready var body = $Body
 
 const max_speed = 150
 const accel = 750
 const friction = 800
 var attack_dir = ""
 var input = Vector2.ZERO
-var attacking:= false;
+var attacking:= false
+var hurt = false
+var health = 100
+var dead = false
 
 func _physics_process(delta):
-	player_movement(delta)
+	if dead == false:
+		player_movement(delta)
+	update_healthbar()
 
 func get_input():
-	
 	input.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	input.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+	
 	if !attacking:
 		if input.y > 0:
 			anim.play("walk_down")
@@ -68,17 +74,43 @@ func attack():
 func _on_animated_sprite_2d_animation_finished():
 	if anim.animation.contains("hit"):
 		attacking = false
-		if attack_dir == "left":
-			$attack/left.disabled = true;
-		if attack_dir == "right":
-			$attack/right.disabled = true;
-		if attack_dir == "up":
-			$attack/up.disabled = true;
-		if attack_dir == "down":
-			$attack/down.disabled = true;
+		$attack/left.disabled = true;
+		$attack/right.disabled = true;
+		$attack/up.disabled = true;
+		$attack/down.disabled = true;
+	
+	if anim.animation == "hurt" && !dead:
+		hurt = false
+		attacking = false
+		anim.play("stop_down")
 	
 
 
 func _on_hurtbox_area_entered(area):
-	if area.get_parent() == enemy:
-		print('morrikkkk')
+	if area != null and enemy != null:
+		if area.name == enemy.name && dead == false:
+			hurt = true
+			anim.play("hurt")
+			health-=20
+			if health <= 0:
+				if dead == false:
+					print("uma vez so ne")
+					anim.play("hurt")
+				dead = true
+				body.set_deferred("disabled",true)
+
+func update_healthbar():
+	var healthbar = $Health/HealthBar
+	healthbar.value = health
+	if health >= 100:
+		healthbar.visible = false
+	else:
+		healthbar.visible = true
+
+func _on_regen_timer_timeout():
+	if health < 100:
+		health+=5
+	if health > 100:
+		health = 100
+	if health <= 0:
+		health = 0

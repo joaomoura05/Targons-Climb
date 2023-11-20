@@ -2868,12 +2868,28 @@ layer_0/tile_data = PackedInt32Array(-2555883, 131074, 3, -2490347, 131074, 4, -
 position = Vector2(-1, -7)
 
 [node name="enemy" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(204, 252)
 
 [node name="enemy2" parent="." instance=ExtResource("6_dcx4k")]
-position = Vector2(34, -167)
+position = Vector2(13, -167)
 
 [node name="enemy3" parent="." instance=ExtResource("6_dcx4k")]
 position = Vector2(-203, -117)
+
+[node name="enemy4" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(293, 223)
+
+[node name="enemy5" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(318, 132)
+
+[node name="enemy6" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(370, 49)
+
+[node name="enemy7" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(-91, -142)
+
+[node name="enemy8" parent="." instance=ExtResource("6_dcx4k")]
+position = Vector2(-264, -54)
 
 [node name="coins" type="Node2D" parent="."]
 

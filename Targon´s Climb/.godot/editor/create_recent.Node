@@ -1,5 +1,11 @@
-TileMap
+CanvasLayer
+Timer
+Node2D
+Node
+ProgressBar
 CollisionShape2D
+Area2D
+TileMap
 Button
 Label
 VBoxContainer
@@ -8,12 +14,8 @@ TextureRect
 HBoxContainer
 MarginContainer
 Control
-CanvasLayer
-Node2D
 AnimatedSprite2D
-Area2D
 TextEdit
-Timer
 AnimationPlayer
 ColorRect
 Sprite2D
