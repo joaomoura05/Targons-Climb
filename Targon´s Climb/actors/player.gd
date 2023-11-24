@@ -63,21 +63,20 @@ func attack():
 	anim.play(anim.animation.replace("stop","hit"))
 	attack_dir = anim.animation.replace("hit_","")
 	if attack_dir == "left":
-		$attack/left.disabled = false;
+		$attack/left.set_deferred("disabled",false)
 	if attack_dir == "right":
-		$attack/right.disabled = false;
+		$attack/right.set_deferred("disabled",false)
 	if attack_dir == "up":
-		$attack/up.disabled = false;
+		$attack/up.set_deferred("disabled",false)
 	if attack_dir == "down":
-		$attack/down.disabled = false;
+		$attack/down.set_deferred("disabled",false)
 
 func _on_animated_sprite_2d_animation_finished():
-	if anim.animation.contains("hit"):
-		attacking = false
-		$attack/left.disabled = true;
-		$attack/right.disabled = true;
-		$attack/up.disabled = true;
-		$attack/down.disabled = true;
+	attacking = false
+	$attack/left.set_deferred("disabled",true);
+	$attack/right.set_deferred("disabled",true);
+	$attack/up.set_deferred("disabled",true);
+	$attack/down.set_deferred("disabled",true);
 	
 	if anim.animation == "hurt" && !dead:
 		hurt = false
@@ -89,8 +88,9 @@ func _on_animated_sprite_2d_animation_finished():
 func _on_hurtbox_area_entered(area):
 	if area != null and enemy != null:
 		if area.name == enemy.name && dead == false:
-			hurt = true
-			anim.play("hurt")
+			if !attacking:
+				hurt = true
+				anim.play("hurt")
 			health-=20
 			if health <= 0:
 				if dead == false:

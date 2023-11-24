@@ -80,10 +80,10 @@ func _on_sprites_animation_finished():
 		queue_free()
 	if enemySprites.animation == "hit":
 		attacking = false
-		$Attack/left.disabled = true;
-		$Attack/right.disabled = true;
-		$Attack/up.disabled = true;
-		$Attack/down.disabled = true;
+		$Attack/left.set_deferred("disabled",true);
+		$Attack/right.set_deferred("disabled",true);
+		$Attack/up.set_deferred("disabled",true);
+		$Attack/down.set_deferred("disabled",true);
 
 
 func _on_hitbox_area_entered(area):
@@ -93,10 +93,10 @@ func _on_hitbox_area_entered(area):
 
 func _on_attack_timer_timeout():
 	if !dead:
-		$Attack/left.disabled = false;
-		$Attack/right.disabled = false;
-		$Attack/up.disabled = false;
-		$Attack/down.disabled = false;
+		$Attack/left.set_deferred("disabled",false);
+		$Attack/right.set_deferred("disabled",false);
+		$Attack/up.set_deferred("disabled",false);
+		$Attack/down.set_deferred("disabled",false);
 		if !hurt:
 			attacking = true
 			enemySprites.play("hit")

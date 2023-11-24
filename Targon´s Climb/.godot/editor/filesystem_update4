@@ -1,9 +1,4 @@
 res://actors/enemy.tscn
-res://actors/player.tscn
-res://Levels/Level I.tscn
-res://Levels/Level II.tscn
-res://Targon.tscn
-res://actors/enemy.gd
-res://actors/player.gd
-res://Menus/menu.tscn
 res://Menus/Menu.gd
+res://actors/player.tscn
+res://bg_music.tscn
