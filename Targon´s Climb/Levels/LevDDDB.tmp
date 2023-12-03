@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bkvql0noc4g15" path="res://actors/enemy.tscn" id="8_xqwj0"]
 [ext_resource type="Texture2D" uid="uid://hpmjq02kyqbw" path="res://assets/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png" id="9_g5naj"]
 [ext_resource type="Texture2D" uid="uid://bukmf6e8ohxu2" path="res://assets/tf_ashlands/2x_RMVX/tf_B_ashlands_2.png" id="12_gy8hp"]
-[ext_resource type="Script" path="res://Menus/Area2D1.gd" id="15_v7vbd"]
+[ext_resource type="Script" path="res://Menus/Passagem_2.gd" id="15_83uyd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mvxye"]
 texture = ExtResource("1_snyuu")
@@ -5846,8 +5846,8 @@ radius = 24.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_674lm"]
 size = Vector2(60, 45.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yv7aw"]
-size = Vector2(96, 18)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m8a8e"]
+size = Vector2(120, 20)
 
 [node name="Level II" type="Node2D"]
 
@@ -5969,11 +5969,10 @@ position = Vector2(34, -167)
 position = Vector2(-203, -117)
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(0, -680)
-script = ExtResource("15_v7vbd")
+position = Vector2(0, -776)
+script = ExtResource("15_83uyd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -112)
-shape = SubResource("RectangleShape2D_yv7aw")
+shape = SubResource("RectangleShape2D_m8a8e")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -14,6 +14,7 @@ var hurt = false
 var health = 100
 var dead = false
 
+
 func _physics_process(delta):
 	if dead == false:
 		player_movement(delta)
@@ -114,3 +115,12 @@ func _on_regen_timer_timeout():
 		health = 100
 	if health <= 0:
 		health = 0
+
+
+func _on_area_2d_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_entered(body):
+	pass # Replace with function body.
+	

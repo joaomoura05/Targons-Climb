@@ -1,9 +1,18 @@
 res://actors/enemy.tscn
 res://actors/player.tscn
-res://Levels/Level I.tscn
-res://Levels/Level II.tscn
-res://Targon.tscn
-res://actors/enemy.gd
-res://actors/player.gd
 res://Menus/menu.tscn
-res://Menus/Menu.gd
+res://bg_music.tscn
+res://Targon.tscn
+res://Levels/Level III.tscn
+res://Levels/Level II.tscn
+res://Menus/Menu aprimoramento.gd
+res://Levels/Passagem2.gd
+res://Menus/Menu aprimoramento 2.gd
+res://Levels/Level I.tscn
+res://actors/player.gd
+res://Menus/Passagem_2.gd
+res://Menus/Passagem_1.gd
+res://Levels/Area2D1.gd
+res://Menus/Area2D1.gd
+res://collectibles/coin.gd
+res://Menus/Menu aprimoramento.tscn
