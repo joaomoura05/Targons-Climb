@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://c2tyrqu1wt0sx"]
+[gd_scene load_steps=35 format=3 uid="uid://c2tyrqu1wt0sx"]
 
 [ext_resource type="Texture2D" uid="uid://dauk150n7hujk" path="res://assets/tf_jungle/tf_jungle_tileset.png" id="1_nj5qu"]
 [ext_resource type="Texture2D" uid="uid://xbkl2ukhl7hm" path="res://assets/tf_ashlands/2x_RMVX/tf_A1_ashlands_2.png" id="2_d3t1h"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://8702y1jo667n" path="res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a5.png" id="7_n2vr7"]
 [ext_resource type="Texture2D" uid="uid://dhs8nbf4wx7u" path="res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_b.png" id="8_6ja1j"]
 [ext_resource type="PackedScene" uid="uid://hkqudkfuojsn" path="res://actors/player.tscn" id="9_bc0lo"]
+[ext_resource type="PackedScene" uid="uid://bkvql0noc4g15" path="res://actors/enemy.tscn" id="10_q44bd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wfn1"]
 texture = ExtResource("1_nj5qu")
@@ -5062,3 +5063,72 @@ shape = SubResource("CircleShape2D_7qgkw")
 [node name="Arvore5" type="CollisionShape2D" parent="Limit Obj"]
 position = Vector2(248, -424)
 shape = SubResource("CircleShape2D_7qgkw")
+
+[node name="enemy_slime" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(302, -168)
+
+[node name="enemy_slime2" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(218, -227)
+
+[node name="enemy_slime3" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(122, -272)
+
+[node name="enemy_slime4" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-286, -246)
+
+[node name="enemy_slime5" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-203, -306)
+
+[node name="enemy_slime6" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-109, -310)
+
+[node name="enemy_slime7" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(401, -291)
+
+[node name="enemy_slime8" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(199, -111)
+
+[node name="enemy_slime9" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(115, -170)
+
+[node name="enemy_slime10" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(19, -215)
+
+[node name="enemy_slime11" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-389, -189)
+
+[node name="enemy_slime12" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(303, -261)
+
+[node name="enemy_slime13" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(219, -320)
+
+[node name="enemy_slime14" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(123, -365)
+
+[node name="enemy_slime15" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-285, -339)
+
+[node name="enemy_slime16" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(628, -252)
+
+[node name="enemy_slime17" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(544, -311)
+
+[node name="enemy_slime18" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(448, -356)
+
+[node name="enemy_slime19" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(40, -330)
+
+[node name="enemy_slime20" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-39, -369)
+
+[node name="enemy_slime21" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-123, -428)
+
+[node name="enemy_slime22" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-219, -473)
+
+[node name="enemy_slime23" parent="." instance=ExtResource("10_q44bd")]
+position = Vector2(-627, -447)

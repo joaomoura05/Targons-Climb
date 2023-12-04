@@ -5959,13 +5959,13 @@ position = Vector2(-434, -6.75)
 shape = SubResource("RectangleShape2D_674lm")
 
 [node name="enemy" parent="." instance=ExtResource("8_xqwj0")]
-position = Vector2(208, -128)
+position = Vector2(-51, -301)
 
 [node name="enemy2" parent="." instance=ExtResource("8_xqwj0")]
-position = Vector2(34, -167)
+position = Vector2(108, -349)
 
 [node name="enemy3" parent="." instance=ExtResource("8_xqwj0")]
-position = Vector2(-203, -117)
+position = Vector2(-478, -265)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(0, -680)
@@ -5974,5 +5974,41 @@ script = ExtResource("15_v7vbd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -112)
 shape = SubResource("RectangleShape2D_yv7aw")
+
+[node name="enemy4" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-269, -331)
+
+[node name="enemy5" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(220, -316)
+
+[node name="enemy6" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-205, -247)
+
+[node name="enemy7" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-216, -421)
+
+[node name="enemy8" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(347, -222)
+
+[node name="enemy9" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-373, -326)
+
+[node name="enemy10" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-41, -200)
+
+[node name="enemy11" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(118, -248)
+
+[node name="enemy12" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(-468, -164)
+
+[node name="enemy13" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(446, -444)
+
+[node name="enemy14" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(605, -492)
+
+[node name="enemy15" parent="." instance=ExtResource("8_xqwj0")]
+position = Vector2(19, -408)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

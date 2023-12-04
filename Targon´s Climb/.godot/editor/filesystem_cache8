@@ -1,14 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701717786
-bg_music.tscn::PackedScene::1735576571693204853::1700858185::0::1::::<><>::uid://cywclhvuipvak::::res://SFX/SFX/Chiptune_Adventures_1.ogg
-Targon.tscn::PackedScene::7786671307130166251::1700514619::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
-::res://actors/::1701717737
+::res://::1701721675
+bg_music.tscn::PackedScene::1735576571693204853::1700858185::0::1::::<><>::uid://cywclhvuipvak
+Targon.tscn::PackedScene::7786671307130166251::1701718157::0::1::::<><>::uid://b1hgoq7iirckp::::res://Menus/menu.tscn
+::res://actors/::1701718157
 enemy.gd::GDScript::-1::1700516561::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::3132653502332024754::1700858185::0::1::::<><>::res://actors/enemy.gd<>uid://of0ow71ypmxo::::res://assets/Puny-Characters/Slime.png<>uid://cy70ptihf33ls::::res://Hurtbox & Hitbox/hurtbox.tscn
+enemy.tscn::PackedScene::3132653502332024754::1701718157::0::1::::<><>::res://actors/enemy.gd<>uid://of0ow71ypmxo::::res://assets/Puny-Characters/Slime.png<>uid://cy70ptihf33ls::::res://Hurtbox & Hitbox/hurtbox.tscn
 enemy_ranged.gd::GDScript::-1::1700860965::0::1::::<>CharacterBody2D<>::
-enemy_ranged.tscn::PackedScene::2274305499817545072::1700860974::0::1::::<><>::uid://dn2unwthuh6dx::::res://assets/Puny-Characters/Archer-Green.png<>res://actors/enemy_ranged.gd
+enemy_ranged.tscn::PackedScene::2274305499817545072::1700860974::0::1::::<><>::uid://dn2unwthuh6dx
 player.gd::GDScript::-1::1701717382::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::512973044041745509::1700858185::0::1::::<><>::res://actors/player.gd<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
+player.tscn::PackedScene::512973044041745509::1701718157::0::1::::<><>::res://actors/player.gd<>uid://bbj2ob5jm4oy::::res://assets/char/Raver_P0.png
 ::res://assets/::1701717737
 ::res://assets/char/::1700698657
 Raver_P0.png::CompressedTexture2D::72848629009724376::1699650336::1699650336::1::::<><>::
@@ -108,21 +108,21 @@ tf_B_ashlands_3.png::CompressedTexture2D::982582956410000478::1699736835::169973
 ashlands_screenshot_rmmv2.png::CompressedTexture2D::6099247401693954628::1699736835::1699737293::1::::<><>::
 ashlands_screenshot_rmmv.png::CompressedTexture2D::3177962192725374808::1699736835::1699737293::1::::<><>::
 cover.png::CompressedTexture2D::4236466248084129706::1699736835::1699737293::1::::<><>::
-::res://assets/tf_jungle/::1701717738
+::res://assets/tf_jungle/::1701717786
 readme.txt::TextFile::-1::1701717382::0::1::::<><>::
 tf_jungle_tileset.png::CompressedTexture2D::7201204821684027172::1701717382::1701717786::1::::<><>::
 ::res://assets/tf_jungle/rpgmaker/::1701717738
-::res://assets/tf_jungle/rpgmaker/RMMV/::1701717730
+::res://assets/tf_jungle/rpgmaker/RMMV/::1701717786
 tf_jungle_a1.png::CompressedTexture2D::2310602291161411306::1701717382::1701717786::1::::<><>::
 tf_jungle_a2.png::CompressedTexture2D::3162222199749887234::1701717382::1701717786::1::::<><>::
 tf_jungle_a5.png::CompressedTexture2D::4549913828252188704::1701717382::1701717786::1::::<><>::
 tf_jungle_b.png::CompressedTexture2D::5972034618975051091::1701717382::1701717786::1::::<><>::
-::res://assets/tf_jungle/rpgmaker/RMVX/::1701717738
+::res://assets/tf_jungle/rpgmaker/RMVX/::1701717786
 tf_jungle_a1.png::CompressedTexture2D::3764715218209313438::1701717382::1701717786::1::::<><>::
 tf_jungle_a2.png::CompressedTexture2D::4209535451563834582::1701717382::1701717786::1::::<><>::
 tf_jungle_a5.png::CompressedTexture2D::2383859370593776449::1701717382::1701717786::1::::<><>::
 tf_jungle_b.png::CompressedTexture2D::226169696876353040::1701717382::1701717786::1::::<><>::
-::res://assets/tf_jungle/rpgmaker/RM_1/::1701717738
+::res://assets/tf_jungle/rpgmaker/RM_1/::1701717786
 tf_jungle_a1.png::CompressedTexture2D::325977264335369867::1701717382::1701717786::1::::<><>::
 tf_jungle_a2.png::CompressedTexture2D::3116689264423859680::1701717382::1701717786::1::::<><>::
 tf_jungle_a5.png::CompressedTexture2D::1107912677729132862::1701717382::1701717786::1::::<><>::
@@ -135,21 +135,21 @@ Knife.png::CompressedTexture2D::3841651287403505613::1699650336::1699650336::1::
 spear.png::CompressedTexture2D::9014836579340543265::1699650336::1699650336::1::::<><>::
 ::res://collectibles/::1701717705
 coin.gd::GDScript::-1::1701717382::0::1::::<>Area2D<>::
-coin.tscn::PackedScene::1648277294355571588::1699650336::0::1::::<><>::res://collectibles/coin.gd<>uid://bxorhvu675xvy::::res://assets/Mini FX, Items & UI/Common Pick-ups/Coin (16 x 16).png<>uid://cdepk0fsvujry::::res://assets/Mini FX, Items & UI/Effects/Yellow_Sparkle (16 x 16).png
+coin.tscn::PackedScene::1648277294355571588::1699650336::0::1::::<><>::res://collectibles/coin.gd<>uid://bxorhvu675xvy
 ::res://Hurtbox & Hitbox/::1699650632
 hitbox.tscn::PackedScene::1878292202912104304::1699650336::0::1::::<><>::
 hurtbox.tscn::PackedScene::6524979425184578184::1699650336::0::1::::<><>::
-::res://Levels/::1701717382
-Level I.tscn::PackedScene::915181251403030227::1701717382::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>uid://xqo5eqb8e07q::::res://collectibles/coin.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>res://Menus/Passagem_1.gd
-Level II.tscn::PackedScene::6966551983120235398::1701717382::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://dn7xyu7oogyg3::::res://assets/tf_ashlands/2x_RMVX/tf_A2_ashlands_2.png<>uid://wgwshs1u05g7::::res://assets/tf_ashlands/1x/tf_A1_ashlands_1.png<>uid://xbkl2ukhl7hm::::res://assets/tf_ashlands/2x_RMVX/tf_A1_ashlands_2.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://b7ccyg8iew5po::::res://assets/tf_ashlands/1x/tf_A2_ashlands_1.png<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://c2qayeiwx10k8::::res://assets/tf_ashlands/1x/tf_A5_ashlands_1.png<>uid://bfr0rwgv08xat::::res://assets/tf_ashlands/3x_RMMV/tf_A5_ashlands_3.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>uid://hpmjq02kyqbw::::res://assets/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png<>uid://bukmf6e8ohxu2::::res://assets/tf_ashlands/2x_RMVX/tf_B_ashlands_2.png<>res://Menus/Area2D1.gd
-Level III.tscn::PackedScene::6708651761744177943::1701717382::0::1::::<><>::uid://dauk150n7hujk::::res://assets/tf_jungle/tf_jungle_tileset.png<>uid://xbkl2ukhl7hm::::res://assets/tf_ashlands/2x_RMVX/tf_A1_ashlands_2.png<>uid://dn7xyu7oogyg3::::res://assets/tf_ashlands/2x_RMVX/tf_A2_ashlands_2.png<>uid://hpmjq02kyqbw::::res://assets/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png<>uid://btvwkr583oh23::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a1.png<>uid://b08eo0sxlg4ba::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a2.png<>uid://8702y1jo667n::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a5.png<>uid://dhs8nbf4wx7u::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_b.png<>uid://hkqudkfuojsn::::res://actors/player.tscn
-::res://Menus/::1701717705
+::res://Levels/::1701718542
+Level I.tscn::PackedScene::915181251403030227::1701718157::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://bo4mfomcjf26q::::res://assets/Texture/TX Props.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>uid://xqo5eqb8e07q::::res://collectibles/coin.tscn<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://cg2ebgb185q1c::::res://assets/Texture/TX Tileset Stone Ground.png<>res://Menus/Passagem_1.gd
+Level II.tscn::PackedScene::6966551983120235398::1701718541::0::1::::<><>::uid://b4t0tl0ouq8ja::::res://assets/Texture/TX Tileset Grass.png<>uid://dtctveuxpx7r7::::res://assets/Texture/TX Struct.png<>uid://ckjsdm0nhf2wc::::res://assets/Texture/TX Tileset Wall.png<>uid://dn7xyu7oogyg3::::res://assets/tf_ashlands/2x_RMVX/tf_A2_ashlands_2.png<>uid://wgwshs1u05g7::::res://assets/tf_ashlands/1x/tf_A1_ashlands_1.png<>uid://xbkl2ukhl7hm::::res://assets/tf_ashlands/2x_RMVX/tf_A1_ashlands_2.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://b7ccyg8iew5po::::res://assets/tf_ashlands/1x/tf_A2_ashlands_1.png<>uid://l085v72b51i::::res://assets/rpg_village_tileset/village_tileset_16.png<>uid://c2qayeiwx10k8::::res://assets/tf_ashlands/1x/tf_A5_ashlands_1.png<>uid://bfr0rwgv08xat::::res://assets/tf_ashlands/3x_RMMV/tf_A5_ashlands_3.png<>uid://bkvql0noc4g15::::res://actors/enemy.tscn<>uid://hpmjq02kyqbw::::res://assets/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png<>uid://bukmf6e8ohxu2::::res://assets/tf_ashlands/2x_RMVX/tf_B_ashlands_2.png<>res://Menus/Area2D1.gd
+Level III.tscn::PackedScene::6708651761744177943::1701718542::0::1::::<><>::uid://dauk150n7hujk::::res://assets/tf_jungle/tf_jungle_tileset.png<>uid://xbkl2ukhl7hm::::res://assets/tf_ashlands/2x_RMVX/tf_A1_ashlands_2.png<>uid://dn7xyu7oogyg3::::res://assets/tf_ashlands/2x_RMVX/tf_A2_ashlands_2.png<>uid://hpmjq02kyqbw::::res://assets/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png<>uid://btvwkr583oh23::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a1.png<>uid://b08eo0sxlg4ba::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a2.png<>uid://8702y1jo667n::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_a5.png<>uid://dhs8nbf4wx7u::::res://assets/tf_jungle/rpgmaker/RMVX/tf_jungle_b.png<>uid://hkqudkfuojsn::::res://actors/player.tscn<>uid://bkvql0noc4g15::::res://actors/enemy.tscn
+::res://Menus/::1701718157
 Area2D1.gd::GDScript::-1::1701717382::0::1::::<>Area2D<>::
 Imagem_Menu.jpg::CompressedTexture2D::6113379392200700666::1699650336::1699650440::1::::<><>::
 Menu aprimoramento.gd::GDScript::-1::1699651042::0::1::::<>Control<>::
 Menu aprimoramento.tscn::PackedScene::2331911792708693062::1699650886::0::1::::<><>::res://Menus/Menu aprimoramento.gd
-Menu.gd::GDScript::-1::1700860789::0::1::::<>Control<>::
-menu.tscn::PackedScene::4226171455813817331::1700514619::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
+Menu.gd::GDScript::-1::1701718157::0::1::::<>Control<>::
+menu.tscn::PackedScene::4226171455813817331::1701718157::0::1::::<><>::res://Menus/Menu.gd<>uid://ctdmp3au88vao::::res://Menus/Imagem_Menu.jpg
 Passagem_1.gd::GDScript::-1::1699737228::0::1::::<>Area2D<>::
 pause.gd::GDScript::-1::1699650336::0::1::::<>Control<>::
 pause.tscn::PackedScene::1116270681599487286::1699650336::0::1::::<><>::res://Menus/pause.gd
